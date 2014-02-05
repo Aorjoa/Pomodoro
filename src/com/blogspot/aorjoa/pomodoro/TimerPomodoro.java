@@ -10,6 +10,7 @@ public class TimerPomodoro extends DroidGap {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.setBooleanProperty("keepRunning", true);
         super.loadUrl("file:///android_asset/www/index.html");
     }
 
